@@ -1,0 +1,341 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.cursor{
+    width: 20px;
+    height: 20px;
+    background: yellow;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 999999;
+}
+
+.scale-cursor{
+    mix-blend-mode: difference;
+    background: white;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #C0A5AB;
+}
+#icon{
+    padding-top: 20px;
+    
+}
+#icon #icon-close{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    animation-name: icon-close;
+    animation-duration:3s;
+}
+@keyframes icon-close {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+#icon p{
+    z-index: 100;
+    color: white;
+    opacity: .8;
+}
+
+
+#heading{
+    font-family: arial;
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
+    opacity: 10;
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    /* border: 2px solid black; */
+    margin-left: 30px;
+    line-height: 90px;
+    z-index: 1;
+    /* background-color:#C0A5AB; */
+   
+}
+#text-close{
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    /* animation-name: text;
+    animation-duration: 5s; */
+    /* overflow: hidden; */
+}
+/* @keyframes tex{
+    0%{
+        width: 100%;
+    }
+    50%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+} */
+
+#heading .box .tc{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#heading #box1{
+    width: 100%;
+    height: 100%;
+    animation-name: text1;
+    animation-duration: 5s;
+    overflow: hidden; 
+}
+@keyframes text1{
+    0%{
+        width: 100%;
+    }
+    25%{
+        width: 0%;
+    }
+    50%{
+        width: 0%;
+    }
+    75%{
+        width: 0%;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
+#heading #box2{
+    width: 100%;
+    height: 100%;
+    animation-name: text2;
+    animation-duration: 4.5s;
+    overflow: hidden; 
+}
+@keyframes text2{
+    0%{
+        width: 100%;
+    }
+    25%{
+        width: 0%;
+    }
+    50%{
+        width: 0%;
+    }
+    75%{
+        width: 0%;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
+#heading #box3{
+    width: 100%;
+    height: 100%;
+    animation-name: text3;
+    animation-duration: 4s;
+    overflow: hidden; 
+}
+@keyframes text3{
+    0%{
+        width: 100%;
+    }
+    25%{
+        width: 0%;
+    }
+    50%{
+        width: 0%;
+    }
+    75%{
+        width: 0%;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
+#heading #box4{
+    width: 100%;
+    height: 100%;
+    animation-name: text4;
+    animation-duration: 3.5s;
+    overflow: hidden; 
+}
+@keyframes text4{
+    0%{
+        width: 100%;
+    }
+    25%{
+        width: 0%;
+    }
+    50%{
+        width: 0%;
+    }
+    75%{
+        width: 0%;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
+
+
+.box #a1{
+    width: 105px;
+    height:75px;
+    background-color: white;
+}
+.box #a2{
+    width: 150px;
+    height:75px;
+    background-color: white;
+}
+.box #a3{
+    width: 305px;
+    height:75px;
+    background-color: white;
+}
+#heading-close{
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+
+#back-photo{
+    width: 70%;
+    height: 100%;
+    /* background-color: red; */
+    position: absolute;
+    top: 50%;
+    left: 46.5%;
+    transform: translate(-50%,-50%);
+    background-image: url(./image/nilendra2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+#back-close{
+    width: 100%;
+    height: 100%;
+    background-color: #C0A5AB;
+    animation-name: back-close;
+    animation-duration: 4s;
+    opacity: 0;
+}
+@keyframes back-close {
+    0%{
+        width: 0%;
+        opacity: 10;
+    }
+    50%{
+        width: 200%;
+        opacity: 10;
+    }
+    100%{
+        width: 0%;
+        opacity: 10;
+    }
+}
+
+#up-photo{
+    width: 500px;
+    height: 600px;
+    /* background-color:yellow; */
+    position: absolute;
+    top: 50%;
+    left: 87%;
+    transform: translate(-50%,-50%);
+    background-image: url(./image/nilendra1.jpg);
+    background-size: cover;
+    border: #C0A5AB;
+}
+
+
+#up-close{
+    width: 100%;
+    height: 100%;
+    background-color: #C0A5AB;
+    animation-name: up-close;
+    animation-duration: 4s;
+    opacity: 0;
+    overflow: hidden;
+}
+@keyframes up-close {
+    0%{
+        width: 0%;
+        opacity: 10;
+    }
+    50%{
+        width: 200%;
+        opacity: 10;
+    }
+    100%{
+        width: 0%;
+        opacity: 10;
+    }
+}
+
+#right-text{
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    right: 1.5%;
+    transform: translate(-50%,-50%);
+    /* background-color:tomato; */
+}
+#right-box{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    animation-name: right-text;
+    animation-duration: 5s;
+    overflow: hidden;
+}
+@keyframes right-text {
+    0%{
+        width:100% ;    
+    }
+    50%{
+        width: 0%;
+    }
+    100%{    
+        width: 100%;
+
+    }
+}
+#right-text pre{
+    transform: rotate(90deg);
+    font-family: aberforth outline regular;
+    font-size: 70px;
+    color: white;
+    font-weight: 100;
+    opacity: .8;
+    text-transform: uppercase;
+
+}
